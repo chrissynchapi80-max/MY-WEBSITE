@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Christinah PR & Consultancy</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+      color:#333;
+      line-height:1.6;
+    }
+
+    /* HEADER */
+    header{
+      background:#0b1f3a;
+      color:white;
+      padding:20px 60px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo h1{
+      font-size:30px;
+    }
+
+    .logo p{
+      font-size:14px;
+      color:#d4d4d4;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+    }
+
+    nav ul li{
+      margin-left:25px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#f4c542;
+    }
+
+    /* HERO SECTION */
+    .hero{
+      height:90vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content h2{
+      font-size:50px;
+      margin-bottom:20px;
+    }
+
+    .hero-content p{
+      font-size:20px;
+      margin-bottom:25px;
+    }
+
+    .btn{
+      background:#f4c542;
+      color:#000;
+      padding:14px 28px;
+      text-decoration:none;
+      font-weight:bold;
+      border-radius:5px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:white;
+    }
+
+    /* ABOUT SECTION */
+    .about{
+      padding:70px 60px;
+      background:white;
+    }
+
+    .about h2{
+      text-align:center;
+      margin-bottom:30px;
+      font-size:36px;
+      color:#0b1f3a;
+    }
+
+    .about p{
+      margin-bottom:20px;
+      font-size:18px;
+      text-align:center;
+    }
+
+    /* SERVICES */
+    .services{
+      padding:70px 60px;
+      background:#eef2f7;
+    }
+
+    .services h2{
+      text-align:center;
+      margin-bottom:40px;
+      font-size:36px;
+      color:#0b1f3a;
+    }
+
+    .service-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .service-box{
+      background:white;
+      padding:30px;
+      border-radius:10px;
+      text-align:center;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .service-box img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+      border-radius:10px;
+      margin-bottom:15px;
+    }
+
+    .service-box h3{
+      margin-bottom:15px;
+      color:#0b1f3a;
+    }
+
+    /* GALLERY */
+    .gallery{
+      padding:70px 60px;
+      background:white;
+    }
+
+    .gallery h2{
+      text-align:center;
+      margin-bottom:40px;
+      font-size:36px;
+      color:#0b1f3a;
+    }
+
+    .gallery-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .gallery-container img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+      border-radius:10px;
+    }
+
+    /* CONTACT */
+    .contact{
+      padding:70px 60px;
+      background:#eef2f7;
+      text-align:center;
+    }
+
+    .contact h2{
+      margin-bottom:20px;
+      color:#0b1f3a;
+    }
+
+    .contact p{
+      margin-bottom:10px;
+      font-size:18px;
+    }
+
+    /* FOOTER */
+    footer{
+      background:#0b1f3a;
+      color:white;
+      text-align:center;
+      padding:25px;
+    }
+
+    .social-links a{
+      color:white;
+      margin:0 10px;
+      text-decoration:none;
+      font-size:18px;
+    }
+
+    .social-links a:hover{
+      color:#f4c542;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:768px){
+
+      header{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      nav ul{
+        margin-top:15px;
+        flex-direction:column;
+      }
+
+      nav ul li{
+        margin:10px 0;
+      }
+
+      .hero-content h2{
+        font-size:35px;
+      }
+
+      .hero-content p{
+        font-size:18px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+
+    <div class="logo">
+      <h1>Christinah PR & Consultancy</h1>
+      <p>Building Strong Brands & Professional Connections</p>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-content">
+      <h2>Professional PR & Business Consultancy</h2>
+
+      <p>
+        Helping businesses grow through strategic communication,
+        branding, and professional consultancy services.
+      </p>
+
+      <a href="#" class="btn">Learn More</a>
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+
+    <h2>About Our Company</h2>
+
+    <p>
+      Christinah PR & Consultancy is a professional consultancy firm
+      specializing in public relations, corporate communication,
+      branding, and business development solutions. We help businesses
+      establish strong public images and maintain professional
+      relationships with clients and stakeholders.
+    </p>
+
+    <p>
+      Our consultancy provides modern communication strategies,
+      digital marketing solutions, media management, and corporate
+      advisory services to startups, organizations, and established
+      businesses. We are committed to professionalism, creativity,
+      and client success.
+    </p>
+
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+
+    <h2>Our Services</h2>
+
+    <div class="service-container">
+
+      <div class="service-box">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop" alt="">
+        <h3>Public Relations</h3>
+        <p>
+          Building positive relationships between businesses,
+          clients, and the public.
+        </p>
+      </div>
+
+      <div class="service-box">
+        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=1000&auto=format&fit=crop" alt="">
+        <h3>Business Consultancy</h3>
+        <p>
+          Professional advice and strategic planning to improve
+          business growth and performance.
+        </p>
+      </div>
+
+      <div class="service-box">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1000&auto=format&fit=crop" alt="">
+        <h3>Digital Marketing</h3>
+        <p>
+          Social media management, online branding, and digital
+          communication services.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery">
+
+    <h2>Company Gallery</h2>
+
+    <div class="gallery-container">
+
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1000&auto=format&fit=crop" alt="">
+
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1000&auto=format&fit=crop" alt="">
+
+      <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1000&auto=format&fit=crop" alt="">
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+
+    <h2>Contact Us</h2>
+
+    <p><strong>Phone:</strong> +266 57363477</p>
+    <p><strong>Email:</strong> info@chrissynchapi80@gmail.com</p>
+    <p><strong>Location:</strong> Pioneer mall,Ground floor,Maseru Lesotho</p>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>© 2026 Christinah PR & Consultancy. All Rights Reserved.</p>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/1CyJeU51KA/?mibextid=wwXlfr" target="_blank">Facebook</a>
+    </div>
+
+  </footer>
+
+</body>
+</html>
